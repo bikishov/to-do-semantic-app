@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/add.css">
+    <link rel="stylesheet" href="styles/todos.css">
+    <script src="js/jquery.min.js" defer="defer"></script>
+    <script src="js/main.js" defer="defer"></script>
+</head>
+<body>
+    <main class="main clearfix">
+        <h1 class="visually-hidden">Список дел</h1>
+
+        <div class="container">
+
+            <section class="todos-list js-todos-list">
+
+                <h2 class="todo__title">Список дел:</h2>
+
+                <p class="empty-list js-empty-list">Список пуст</p>
+
+                <ul class="items js-items list-reset">
+
+                </ul>
+            </section>
+
+            <section class="add-do">
+                <h2 class="todo__title">Добавить новое дело:</h2>
+
+                <form class="form js-form" id="js-add-do" action="index.html" method="POST">
+                    <div class="title">
+                        <label class="title__label" for="title">
+                            <sup>*</sup> Название
+                        </label>
+                        <input class="js-title add__control" type="text" id="title" name="title" required>
+                    </div>
+
+                    <div class="discription">
+                        <label class="title__label" for="discription">
+                            <sup>*</sup> Описание
+                        </label>
+                        <textarea class="js-area discription__area add__control" id="discription" name="discription"
+                            required></textarea>
+                    </div>
+
+                    <button class="add js-add" type="submit" name="add">Добавить дело</button>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
